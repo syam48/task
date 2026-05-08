@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pro Task Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🚀 Pro Task Manager</h1>
+    <button id="darkBtn">🌙</button>
+</header>
+
+<div class="controls">
+    <input type="text" id="taskInput" placeholder="Enter task...">
+
+    <select id="priority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+    </select>
+
+    <button id="addBtn">Add</button>
+</div>
+
+<input type="text" id="search" placeholder="Search tasks...">
+
+<div class="filters">
+    <button onclick="filterTasks('all')">All</button>
+    <button onclick="filterTasks('completed')">Completed</button>
+    <button onclick="filterTasks('pending')">Pending</button>
+</div>
+
+<ul id="taskList"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>
